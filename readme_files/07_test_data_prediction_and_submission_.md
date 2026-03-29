@@ -6,7 +6,7 @@ But what about truly **new, unseen data**? In the real world, our model won't ha
 
 ## What Problem Does This Solve?
 
-Imagine our project is a competition to build the best abusive Tamil text detector. You've spent weeks perfecting your model (the trained Transformer from [Step 5: Training](05_training_orchestration_.md)). You've thoroughly taste-tested it on your validation set (from [Step 6: Performance Evaluation & Visualization](06_performance_evaluation___visualization_.md)). Now, the competition organizers give you a brand-new set of Tamil social media comments – the **test data** – without any labels. Your task is to:
+Imagine our project is a competition to build the best abusive Tamil text detector. You've spent weeks perfecting your model (the trained Transformer from [Step 5: Training](05_training_orchestration_.md)). You've thoroughly taste-tested it on your validation set (from [Step 6: Performance Evaluation & Visualization](06_performance_evaluation___visualization_.md)). Now, the competition organizers gave us a brand-new set of Tamil social media comments – the **test data** – without any labels. Your task is to:
 
 1.  Apply your final, best model to *this* unseen test data.
 2.  Predict whether each text is "Abusive" or "Non-Abusive."
