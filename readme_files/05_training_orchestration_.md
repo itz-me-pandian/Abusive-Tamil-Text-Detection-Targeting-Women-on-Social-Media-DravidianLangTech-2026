@@ -23,9 +23,9 @@ For our project, detecting abusive Tamil text, we need a system that can:
 5.  **Save the "best dish"**: Store the model that performed the best.
 6.  **Handle special ingredients**: Adjust for challenges like class imbalance (where we have many more non-abusive texts than abusive ones).
 
-Hugging Face's `Trainer` class, along with its `TrainingArguments`, is our powerful kitchen manager that handles all this orchestration.
+Hugging Face's `Trainer` class, along with its `TrainingArguments`, is our powerful kitchen manager that handles all this training process.
 
-## Key Concepts in Training Orchestration
+## Key Concepts in Training
 
 Let's break down the main tools and ideas for managing our model's learning journey.
 
@@ -276,7 +276,7 @@ sequenceDiagram
 
 ### Code References from Project Files:
 
-You can see these orchestration steps directly implemented in the `indicBert-v2.ipynb` and `xlm-roberta-base-vf.ipynb` files.
+You can see these training steps directly implemented in the `indicBert-v2.ipynb` and `xlm-roberta-base-vf.ipynb` files.
 
 #### 1. `TrainingArguments` Setup:
 
