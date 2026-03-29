@@ -8,7 +8,7 @@ Training an AI model is very similar! Our model has learned, but did it learn we
 
 ## What Problem Does Evaluation & Visualization Solve?
 
-The core problem this chapter solves is: **How do we know if our trained model is effective, and what kind of mistakes is it making?**
+The core problem this step solves is: **How do we know if our trained model is effective, and what kind of mistakes is it making?**
 
 For our `Abusive-Tamil-Text-Detection` project, this means answering questions like:
 1.  **Is it accurate?** How many abusive/non-abusive texts did it correctly identify overall?
