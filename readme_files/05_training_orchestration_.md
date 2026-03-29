@@ -1,4 +1,4 @@
-# Step 5: Training Orchestration
+# Step 5: Training
 
  In [Step 4: Custom PyTorch Dataset](04_custom_pytorch_dataset_.md), we efficiently organized our tokenized Tamil texts and their labels into custom `Dataset` objects. We now have our ingredients: a powerful Transformer model ready to learn (from [Step 1: Transformer Model](01_transformer_model_.md)) and perfectly prepared data (from [Step 2: Data Preparation](02_data_preparation_.md), [Step 3: Text Tokenization](03_text_tokenization_.md), and [Step 4: Custom PyTorch Dataset](04_custom_pytorch_dataset_.md)).
 
