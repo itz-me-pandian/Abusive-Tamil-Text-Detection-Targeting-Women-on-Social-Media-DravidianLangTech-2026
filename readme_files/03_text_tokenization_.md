@@ -2,7 +2,7 @@
 
  In [Step 2: Data Preparation](02_data_preparation_.md), We transformed raw, messy text into neat lists of `clean_text` and their corresponding numerical `label` IDs (0 for non-abusive, 1 for abusive). Great job!
 
-Now, imagine you have a beautifully cleaned Tamil sentence like: "இது ஒரு நல்ல பதிவு." (This is a good post.) Your human brain understands this immediately. But what about our super-smart Transformer model from [Chapter 1: Transformer Model](01_transformer_model_.md)? It's a computer, and computers don't understand words like "இது" or "நல்ல" directly. They only understand **numbers**.
+Now, imagine you have a beautifully cleaned Tamil sentence like: "இது ஒரு நல்ல பதிவு." (This is a good post.) Your human brain understands this immediately. But what about our super-smart Transformer model from [Step 1: Transformer Model](01_transformer_model_.md)? It's a computer, and computers don't understand words like "இது" or "நல்ல" directly. They only understand **numbers**.
 
 This is where **Text Tokenization** comes in! It's the crucial step that acts like a translator, converting our human-readable, cleaned text into a language our Transformer model can actually process: a sequence of numerical IDs.
 
