@@ -4,7 +4,7 @@
 
 But how do we actually *run the show*? How do we tell our model to start learning, make sure it learns well, and evaluate its progress? This is where **Training** comes in!
 
-## What Problem Does Training Orchestration Solve?
+## What Problem Does Training Solve?
 
 Imagine you're a chef preparing a complex meal. You have all your ingredients chopped, measured, and ready (our prepared data and model). But you don't just throw everything into the oven and hope for the best! You need a recipe, a timer, and a plan:
 *   How long to cook? (Number of epochs)
