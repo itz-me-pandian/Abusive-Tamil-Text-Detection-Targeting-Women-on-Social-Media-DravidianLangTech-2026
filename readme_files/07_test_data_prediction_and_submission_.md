@@ -8,7 +8,7 @@ But what about truly **new, unseen data**? In the real world, our model won't ha
 
 Imagine our project is a competition to build the best abusive Tamil text detector. You've spent weeks perfecting your model (the trained Transformer from [Step 5: Training](05_training_orchestration_.md)). You've thoroughly taste-tested it on your validation set (from [Step 6: Performance Evaluation & Visualization](06_performance_evaluation___visualization_.md)). Now, the competition organizers gave us a brand-new set of Tamil social media comments – the **test data** – without any labels. Our task is to:
 
-1.  Apply your final, best model to *this* unseen test data.
+1.  Apply our final, best model to *this* unseen test data.
 2.  Predict whether each text is "Abusive" or "Non-Abusive."
 3.  Format these predictions into a specific file (usually a CSV) to "submit" your results for final evaluation.
 
@@ -27,7 +27,7 @@ The process of making predictions on test data reuses many concepts we've alread
 
 ## Step-by-Step: Predicting on Test Data
 
-Let's walk through the process with code. We'll assume you have your `model` (the best version after training) and `tokenizer` loaded from previous Steps.
+Let's walk through the process with code. We have our `model` (the best version after training) and `tokenizer` loaded from previous Steps.
 
 ### 7.1 Loading the Test Data
 
@@ -136,7 +136,7 @@ print(f"\nTest dataset created with {len(test_dataset)} samples.")
 
 ### 7.4 Making Predictions
 
-Now, we use our trained `trainer` object (from [Step 5: Training Orchestration](05_training_orchestration_.md)) to make predictions on the `test_dataset`.
+Now, we use our trained `trainer` object (from [Step 5: Training](05_training_orchestration_.md)) to make predictions on the `test_dataset`.
 
 ```python
 # Assume 'model' and 'trainer' objects are available and the model is on the correct device (e.g., GPU)
@@ -228,7 +228,7 @@ sequenceDiagram
     PostProcessing-->>Script: Returns "Abusive" / "Non-Abusive" labels.
     Script->>SubmissionFile: "Save predictions to CSV."
     SubmissionFile-->>Script: CSV file created.
-    User-->>Script: 🎉 Submission file ready!
+    User-->>Script:  Submission file ready!
 ```
 
 ### Code References from Project Files:
@@ -304,7 +304,7 @@ Both notebooks successfully demonstrate the core process of applying the trained
 
 ## Conclusion
 
-In this final Step, we've completed the journey of our `Abusive-Tamil-Text-Detection` project! We learned how to:
+In this final Step, we've completed the task of `Abusive-Tamil-Text-Detection` ! We learned how to:
 *   Load raw test data.
 *   Apply the exact same preprocessing and tokenization steps used during training.
 *   Create a dataset object for our test data.
