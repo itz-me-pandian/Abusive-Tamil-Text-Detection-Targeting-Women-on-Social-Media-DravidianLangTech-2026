@@ -6,27 +6,18 @@ Our Submission to the tak aims to detect abusive Tamil text targeting women on s
 ## Visual Overview
 
 ```mermaid
-flowchart TD
-    A0["Data Preparation"]
-    A1["Text Tokenization"]
-    A2["Transformer Model"]
-    A3["Custom PyTorch Dataset"]
-    A4["Training Orchestration"]
-    A5["Performance Evaluation & Visualization"]
-    A6["Test Data Prediction and Submission"]
-    A0 -- "Provides clean text" --> A1
-    A0 -- "Provides labels for" --> A3
-    A1 -- "Loads tokenizer for" --> A2
-    A1 -- "Provides encodings for" --> A3
-    A2 -- "Is trained by" --> A4
-    A3 -- "Supplies data to" --> A4
-    A4 -- "Generates evaluation data" --> A5
-    A6 -- "Reuses preprocessing" --> A0
-    A6 -- "Uses tokenizer" --> A1
-    A6 -- "Makes predictions" --> A2
+flowchart TB
+
+    A0["Data Prep"] --> A1["Tokenization"] --> A3["Dataset"]
+    A3 --> A4["Training"] --> A5["Evaluation"]
+    A2["Transformer Model"] --> A4
+
+    A6["Test Pipeline"] --> A0
+    A6 --> A1
+    A6 --> A2
 ```
 
-## Chapters
+## Steps
 
 1. [Transformer Model](readme_files/01_transformer_model_.md)
 2. [Data Preparation](readme_files/02_data_preparation_.md)
