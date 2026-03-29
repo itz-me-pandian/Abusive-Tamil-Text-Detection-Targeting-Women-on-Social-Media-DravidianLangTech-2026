@@ -1,6 +1,6 @@
 # Step 4: Custom PyTorch Dataset
 
- In Previous[Step 3: Text Tokenization](03_text_tokenization_.md), we successfully transformed our clean Tamil text into a numerical format – lists of `input_ids`, `attention_mask`, and `token_type_ids`. We also have our numerical `labels` (0 or 1) ready. Now, we have all our "ingredients" prepared!
+ In Previous [Step 3: Text Tokenization](03_text_tokenization_.md), we successfully transformed our clean Tamil text into a numerical format – lists of `input_ids`, `attention_mask`, and `token_type_ids`. We also have our numerical `labels` (0 or 1) ready. Now, we have all our "ingredients" prepared!
 
 But how do we actually give these ingredients to our powerful Transformer model? Deep learning models, especially during training, don't just process one sentence at a time. They learn much more efficiently when given data in **batches** – like a stack of 16 or 32 sentences at once.
 
